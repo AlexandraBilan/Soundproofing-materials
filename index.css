@@ -1,0 +1,369 @@
+
+body
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: Verdena, sans-serif;
+}
+.container
+{ 
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+@media (max-width: 1150px) 
+{
+    .container
+    {
+        width: 95%;
+    }
+}
+
+.header
+{
+    background: url(header-bg2.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+.header_nav
+{
+    position: fixed;
+    width: 100%;
+    background: #1c2840;
+    height: 50px;
+    z-index: 100;
+}
+.nav
+{
+    display: inline-block;
+    list-style: none;
+    float: right;
+}
+.nav>li
+{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+    margin-right: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 4px;
+}
+.nav>li:hover{
+  background: #ecf1f5;
+    border: 1px solid #ecf1f5;
+}
+.nav>li:hover>a
+{
+     color: #1c2840;
+
+}
+.nav>li>a
+{
+      color: white;
+    text-decoration: none;
+}
+.title>h1
+{
+    background-color: hsla(0,0%,0%,.3);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 500;
+    position: absolute;
+    top: 200px;
+}
+.main-info
+{
+    background-color: hsla(0,250%,250%,.5);
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 100px;
+}
+.main-info>ul
+{
+    list-style: none;
+}
+.main-info>ul>li>a
+{
+    color: #080808;
+    font-size: 1.2em;
+    position: relative;
+    top: -15px;
+    padding-left: 15px;
+    font-weight: 600; 
+}
+
+.main-info>ul>li
+{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+.main-info>ul>li>img
+{
+    width: 60px;
+}
+
+/***********************Главная часть******************/
+.power
+{
+    padding-top: 70px;
+        text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+.main-about
+{
+    width: 30%;
+    height: 200px;
+    margin: 8px;
+    float: left;
+    background: linear-gradient(to top, #1c2840, #284a81);
+    padding: 10px;
+}
+
+.main-about:hover
+{
+    background: url(hover.jpg);
+    background-size: cover;
+}
+.main-about>h3
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 45px;
+    border-bottom-style: solid;
+    padding-bottom: 20px;
+}
+.main-about:nth-child(2)>h3
+{
+   margin-bottom: 25px;
+}
+.main-about>p, .main-about>ul 
+{
+     color: #c9c9c9;
+    letter-spacing: 3px;
+}
+.plus>h3
+{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.about
+{
+    height: 650px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1505px) 
+{
+
+    .main-about
+    {
+        margin: 3px;
+    }
+}
+@media screen and (max-width: 920px) 
+{
+ .main-about
+    {
+        margin-right: 10%;
+    }
+    .about
+    {
+       height: 850px;
+    }
+}
+.plus
+{
+    margin-top: 10px;
+}
+.plus-event
+{
+    background: #ecf1f5;
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1px;
+}
+.plus>.container>ul, .plus-event>.container>ul
+{
+    list-style-image: url(gear.gif);
+   
+}
+.plus>.container>ul>li, .plus-event>.container>ul>li
+{
+    padding: 5px 0 10px;
+  
+}
+
+.plus>.container>h2, .plus-event>.container>h2, .about-title
+{
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 70px;
+    position: relative;
+}
+
+.line-plus
+{
+    width: 30%;
+    position: relative;
+    left: 35%;
+    height: 5px;
+    background: #284a81;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.plus>.container>p, .plus-event>.container>p, .about> p
+{
+    line-height: 25px;
+}
+.about-radio
+{
+    line-height: 25px;
+}
+/*Форма обратной связи*/
+#form
+{
+    display: none;
+    position: fixed;
+    bottom: 150px;
+    right: 55px;
+    width: 385px;
+    height: 300px; 
+    background: #284a81;
+    padding: 20px;
+}
+#form input
+{
+    width: 180px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.form-name
+{
+    float: left;
+    margin-right: 17px;
+}
+.form-color
+{
+    background: #eaeef1;
+    border: none;
+    border-radius: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #767a80;
+}
+textarea
+{
+    width: 380px;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+}
+#form label, input[type="submit"]
+{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: .85em;
+}
+input[type="submit"]
+{
+    width: 140px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+input[type="submit"]:hover
+{
+     background: #ecf1f5;
+    border: 1px solid #ecf1f5;
+    color: #8d8f92;
+}
+#send-mail
+{ 
+    position: fixed;
+    width: 100px;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/******Footer и контакты*****/
+.footer
+{
+    margin-top: 100px;
+    height: 200px;
+    background: #1c2840;
+    color: #fff;
+}
+
+.column
+{
+    width: 28%;
+    margin-left: 10px;
+    float: left;
+}
+.column>h5
+{
+    text-transform: uppercase;
+}
+.col1>p
+{
+    margin-top: 20px;
+ 
+}
+.col2>ul
+{
+    padding-left: 0;
+}
+.col2>ul>li
+{
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 0;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+.col2>ul>li>a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.col2>ul>li:hover
+{
+     background: #ecf1f5;
+    border: 1px solid #ecf1f5;
+}
+.col2>ul>li:hover>a
+{
+    color: #1c2840;
+}
+.col3>ul>li
+{
+   margin-bottom: 7px; 
+}
+.col3>ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+.col3>ul>li>a
+{
+    color: #fff;
+}
